@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <title>אישור תור</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>בקשת התור שלך נשלחה!</h1>
+    <p>תודה, {{ name }}!</p>
+    <p>התור שביקשת נקבע ל- {{ date }} בשעה {{ time }}.</p>
+    <a href="{{ payment_link }}" class="btn">שלם בביט</a>
+</body>
+</html>
